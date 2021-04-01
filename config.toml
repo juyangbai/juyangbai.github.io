@@ -2,3 +2,5 @@ baseURL = "juyangbai.github.io"
 languageCode = "en-us"
 title = "Juyang Bai"
 theme = "hugo-theme-cleanwhite"
+
+publishDir = "docs"
