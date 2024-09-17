@@ -53,12 +53,11 @@
             </tr>
           </tbody></table>
 
-
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-    
+          
+            
             <!-- Project 1 -->
-            <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+            <tr onmouseout="phantoms_stop()" onmouseover="phantoms_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
@@ -68,38 +67,33 @@
                   <img src='images/nerfcasting.jpg' width=100%>
                 </div>
                 <script type="text/javascript">
-                  function nerfcasting_start() {
-                    document.getElementById('nerfcasting_image').style.opacity = "1";
+                  function phantoms_start() {
+                    document.getElementById('phantoms_image').style.opacity = "1";
                   }
 
-                  function nerfcasting_stop() {
-                    document.getElementById('nerfcasting_image').style.opacity = "0";
+                  function phantoms_stop() {
+                    document.getElementById('phantoms_image').style.opacity = "0";
                   }
-                  nerfcasting_stop()
+                  phantoms_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://nerf-casting.github.io/">
-                  <span class="papertitle">NeRF-Casting: Improved View-Dependent Appearance with Consistent Reflections</span>
+                  <span class="papertitle">Phantom: Privacy-Preserving Deep Neural Network Model Obfuscation in Heterogeneous TEE and GPU System</span>
                 </a>
                 <br>
-                
-                <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-                <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-                <a href="https://phogzone.com/">Peter Hedman</a>,
-                <a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
-                <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-                <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
-                <strong>Jonathan T. Barron</strong>
+                <strong>Juyang Bai</strong>,
+                Md Hafizul Islam Chowdhuryy,
+                Jingtao Li,
+                Yao Fan,
+                Chaitali Chakrabarti,
+                Deliang Fan
                 <br>
-                <em>SIGGRAPH Asia</em>, 2024
+                <em>USENIX Security</em>, 2025 (Under Review)
                 <br>
-                <a href="https://nerf-casting.github.io/">project page</a>
-                /
-                <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
                 <p></p>
                 <p>
-                Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
+                We propose a novel privacy-preserving framework for deep neural network (DNN) model obfuscation. This framework protects model privacy by deploying DNN models across heterogeneous trusted execution environment (TEE) and GPU systems.
                 </p>
               </td>
             </tr>
