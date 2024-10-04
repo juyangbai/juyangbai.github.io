@@ -255,31 +255,31 @@
                 <p></p>
               </td>
             </tr>
-
+            
             <!-- Project gaussian -->
             <tr onmouseout="gs_stop()" onmouseover="gs_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/eclipse_after.mp4" type="video/mp4">
+                  <div class="two" id='3dgs_image'><video  width="360" height="360" muted autoplay loop>
+                  <source src="images/gaussian/3dgs_clip.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
-                  <img src='images/eclipse_before.jpg' width="160">
+                  <img src='images/gaussian/3dgs_clip.png' width="360" height="360">
                 </div>
                 <script type="text/javascript">
                   function gs_start() {
-                    document.getElementById('eclipse_image').style.opacity = "1";
+                    document.getElementById('3dgs_image').style.opacity = "1";
                   }
-
+                  
                   function gs_stop() {
-                    document.getElementById('eclipse_image').style.opacity = "0";
+                    document.getElementById('3dgs_image').style.opacity = "0";
                   }
                   gs_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://juyangbai.github.io/3D-Gaussian-Splatting-vs.-Instant-NGP-A-Comparative-Approach-to-3D-Scene-Representation/">
-                  <span class="papertitle">3D Gaussian Splatting vs. Instant-NGP: A Comparative Approach to 3D Scene Representation</span>
+                  <span class="papertitle">3D Gaussian Splatting vs. Instant-NGP: A Comparative Study to 3D Scene Representation</span>
                 </a>
                 <br>
                 <a href="https://juyangbai.github.io/3D-Gaussian-Splatting-vs.-Instant-NGP-A-Comparative-Approach-to-3D-Scene-Representation/">project page</a>
