@@ -62,7 +62,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p>
-                    My current research interests are 3D computer vision, generative models, and multimodal learning.
+                    My current research interests focus on developing trustworthy, secure, and efficient artificial intelligence (AI) algorithms and systems.
                     <!-- Some papers are <span class="highlight">highlighted</span>. -->
                   </p>
                 </td>
@@ -214,156 +214,175 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Misc Projects</h2>
+                <h2 onclick="toggleProjects()" style="cursor: pointer;">
+                  Misc Projects <span id="projectsToggle">▼</span>
+                </h2>
               </td>
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <div id="projectsContent" style="display: block;">
 
-            <!-- Project nerf -->
-            <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='nerf_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/nerf/instantngp_clip_resize.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div>
-                  <img src='images/nerf/instantngp_resize.png' width="100%">
-                </div>
-                <script type="text/javascript">
-                  function nerf_start() {
-                    document.getElementById('nerf_image').style.opacity = "1";
-                  }
-                  
-                  function nerf_stop() {
-                    document.getElementById('nerf_image').style.opacity = "0";
-                  }
-                  nerf_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://juyangbai.github.io/Evaluating-Rendering-Techniques-A-Comparative-Study-of-Instant-NGP-LERF-Nerfacto-and-TensorRF/">
-                  <span class="papertitle">Evaluating Rendering Techniques: A Comparative Study of Instant-NGP, LERF, Nerfacto, and TensorRF</span>
-                </a>
-                <br>
-                <a href="https://juyangbai.github.io/Evaluating-Rendering-Techniques-A-Comparative-Study-of-Instant-NGP-LERF-Nerfacto-and-TensorRF/">project page</a>
-                /
-                <a href="https://drive.google.com/file/d/1OuLjkbOibsEGYJtLjSR_PaWC6DaiaBlG/view?usp=drive_link">report</a>
-                /
-                <a href="https://github.com/juyangbai/Evaluating-Rendering-Techniques-A-Comparative-Study-of-Instant-NGP-LERF-Nerfacto-and-TensorRF/tree/main/nerfstudio">code</a>
-                <p></p>
-              </td>
-            </tr>
-            
-            <!-- Project gaussian -->
-            <tr onmouseout="gs_stop()" onmouseover="gs_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='3dgs_image'><video  width="100%" height="100%" muted autoplay loop>
-                  <source src="images/gaussian/gaussian_clip_resize.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div>
-                  <img src='images/gaussian/gaussian_img.png' width="100%" height="100%">
-                </div>
-                <script type="text/javascript">
-                  function gs_start() {
-                    document.getElementById('3dgs_image').style.opacity = "1";
-                  }
-                  
-                  function gs_stop() {
-                    document.getElementById('3dgs_image').style.opacity = "0";
-                  }
-                  gs_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://juyangbai.github.io/3D-Gaussian-Splatting-vs.-Instant-NGP-A-Comparative-Approach-to-3D-Scene-Representation/">
-                  <span class="papertitle">3D Gaussian Splatting vs. Instant-NGP: A Comparative Study to 3D Scene Representation</span>
-                </a>
-                <br>
-                <a href="https://juyangbai.github.io/3D-Gaussian-Splatting-vs.-Instant-NGP-A-Comparative-Approach-to-3D-Scene-Representation/">project page</a>
-                <p></p>
-              </td>
-            </tr>            
-            
-            <!-- Project lerf -->
-            <tr onmouseout="lerf_stop()" onmouseover="lerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <img src='images/lerf/bear.png' width="100%">
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://juyangbai.github.io/LERF-Replicattion-Bridging-Language-and-3D-Environments/">
-                  <span class="papertitle">LERF Replicattion: Bridging Language and 3D Environments</span>
-                </a>
-                <br>
-                <a href="https://juyangbai.github.io/LERF-Replicattion-Bridging-Language-and-3D-Environments/">project page</a>
-                <p></p>
-              </td>
-            </tr>
-            
-            <!-- Project efficient transformer -->
-            <tr onmouseout="efficient_transformer_stop()" onmouseover="efficient_transformer_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <img src='images/efficient/EfficientViT.jpg' width="100%">
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://juyangbai.github.io/Efficient-Vision-Transformer-on-the-Edge/">
-                  <span class="papertitle">Efficient Vision Transformer on the Edge</span>
-                </a>
-                <br>
-                <a href="https://juyangbai.github.io/Efficient-Vision-Transformer-on-the-Edge/">project page</a>
-                /
-                <a href="https://drive.google.com/file/d/1N7uHpMnqqlyTs3es0TjvUABeVOJEudNM/view?usp=drive_link">report</a>
-                <p></p>
-              </td>
-            </tr>
-            
-            <!-- Project pws2confocal -->
-            <tr onmouseout="pws2confocal_stop()" onmouseover="pws2confocal_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <img src='images/pws2confocal/Medical.png' width=100%>
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://juyangbai.github.io/PWS-to-Confocal-Microscopy-Cell-Image-Translation/">
-                  <span class="papertitle">PWS-to-Confocal Microscopy Cell Image Translation</span>
-                </a>
-                <br>
-                <a href="https://juyangbai.github.io/PWS-to-Confocal-Microscopy-Cell-Image-Translation/">project page</a>
-                /
-                <a href="https://github.com/juyangbai/Cell-Dataset-Process">code</a>
-                <p></p>
-              </td>
-            </tr>
-            
-            <!-- Project facedet
-            <tr onmouseout="facedet_stop()" onmouseover="facedet_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <img src='images/facedet/Mask.png' width=100%>
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://juyangbai.github.io/Transformer-based-Face-Mask-Detection/">
-                  <span class="papertitle">Transformer-based Face Mask Detection</span>
-                </a>
-                <br>
-                <a href="https://juyangbai.github.io/Transformer-based-Face-Mask-Detection/">project page</a>
-                <p></p>
-                <p>
-                TBD.
-                </p>
-              </td>
-            </tr> -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          </tbody></table>
+              <!-- Project nerf -->
+              <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='nerf_image'><video  width=100% height=100% muted autoplay loop>
+                    <source src="images/nerf/instantngp_clip_resize.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/nerf/instantngp_resize.png' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function nerf_start() {
+                      document.getElementById('nerf_image').style.opacity = "1";
+                    }
+                    
+                    function nerf_stop() {
+                      document.getElementById('nerf_image').style.opacity = "0";
+                    }
+                    nerf_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://juyangbai.github.io/Evaluating-Rendering-Techniques-A-Comparative-Study-of-Instant-NGP-LERF-Nerfacto-and-TensorRF/">
+                    <span class="papertitle">Evaluating Rendering Techniques: A Comparative Study of Instant-NGP, LERF, Nerfacto, and TensorRF</span>
+                  </a>
+                  <br>
+                  <a href="https://juyangbai.github.io/Evaluating-Rendering-Techniques-A-Comparative-Study-of-Instant-NGP-LERF-Nerfacto-and-TensorRF/">project page</a>
+                  /
+                  <a href="https://drive.google.com/file/d/1OuLjkbOibsEGYJtLjSR_PaWC6DaiaBlG/view?usp=drive_link">report</a>
+                  /
+                  <a href="https://github.com/juyangbai/Evaluating-Rendering-Techniques-A-Comparative-Study-of-Instant-NGP-LERF-Nerfacto-and-TensorRF/tree/main/nerfstudio">code</a>
+                  <p></p>
+                </td>
+              </tr>
+              
+              <!-- Project gaussian -->
+              <tr onmouseout="gs_stop()" onmouseover="gs_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='3dgs_image'><video  width="100%" height="100%" muted autoplay loop>
+                    <source src="images/gaussian/gaussian_clip_resize.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/gaussian/gaussian_img.png' width="100%" height="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function gs_start() {
+                      document.getElementById('3dgs_image').style.opacity = "1";
+                    }
+                    
+                    function gs_stop() {
+                      document.getElementById('3dgs_image').style.opacity = "0";
+                    }
+                    gs_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://juyangbai.github.io/3D-Gaussian-Splatting-vs.-Instant-NGP-A-Comparative-Approach-to-3D-Scene-Representation/">
+                    <span class="papertitle">3D Gaussian Splatting vs. Instant-NGP: A Comparative Study to 3D Scene Representation</span>
+                  </a>
+                  <br>
+                  <a href="https://juyangbai.github.io/3D-Gaussian-Splatting-vs.-Instant-NGP-A-Comparative-Approach-to-3D-Scene-Representation/">project page</a>
+                  <p></p>
+                </td>
+              </tr>            
+              
+              <!-- Project lerf -->
+              <tr onmouseout="lerf_stop()" onmouseover="lerf_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/lerf/bear.png' width="100%">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://juyangbai.github.io/LERF-Replicattion-Bridging-Language-and-3D-Environments/">
+                    <span class="papertitle">LERF Replicattion: Bridging Language and 3D Environments</span>
+                  </a>
+                  <br>
+                  <a href="https://juyangbai.github.io/LERF-Replicattion-Bridging-Language-and-3D-Environments/">project page</a>
+                  <p></p>
+                </td>
+              </tr>
+              
+              <!-- Project efficient transformer -->
+              <tr onmouseout="efficient_transformer_stop()" onmouseover="efficient_transformer_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/efficient/EfficientViT.jpg' width="100%">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://juyangbai.github.io/Efficient-Vision-Transformer-on-the-Edge/">
+                    <span class="papertitle">Efficient Vision Transformer on the Edge</span>
+                  </a>
+                  <br>
+                  <a href="https://juyangbai.github.io/Efficient-Vision-Transformer-on-the-Edge/">project page</a>
+                  /
+                  <a href="https://drive.google.com/file/d/1N7uHpMnqqlyTs3es0TjvUABeVOJEudNM/view?usp=drive_link">report</a>
+                  <p></p>
+                </td>
+              </tr>
+              
+              <!-- Project pws2confocal -->
+              <tr onmouseout="pws2confocal_stop()" onmouseover="pws2confocal_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/pws2confocal/Medical.png' width=100%>
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://juyangbai.github.io/PWS-to-Confocal-Microscopy-Cell-Image-Translation/">
+                    <span class="papertitle">PWS-to-Confocal Microscopy Cell Image Translation</span>
+                  </a>
+                  <br>
+                  <a href="https://juyangbai.github.io/PWS-to-Confocal-Microscopy-Cell-Image-Translation/">project page</a>
+                  /
+                  <a href="https://github.com/juyangbai/Cell-Dataset-Process">code</a>
+                  <p></p>
+                </td>
+              </tr>
+              
+              <!-- Project facedet
+              <tr onmouseout="facedet_stop()" onmouseover="facedet_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/facedet/Mask.png' width=100%>
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://juyangbai.github.io/Transformer-based-Face-Mask-Detection/">
+                    <span class="papertitle">Transformer-based Face Mask Detection</span>
+                  </a>
+                  <br>
+                  <a href="https://juyangbai.github.io/Transformer-based-Face-Mask-Detection/">project page</a>
+                  <p></p>
+                  <p>
+                  TBD.
+                  </p>
+                </td>
+              </tr> -->
+
+            </tbody></table>
+          </div>
           
+          <script>
+            function toggleProjects() {
+              var content = document.getElementById("projectsContent");
+              var toggle = document.getElementById("projectsToggle");
+              if (content.style.display === "none") {
+                content.style.display = "block";
+                toggle.innerHTML = "▼";
+              } else {
+                content.style.display = "none";
+                toggle.innerHTML = "▶";
+              }
+            }
+          </script>
+
           <!-- Clustrmaps -->
           <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=2d78ad&w=800&t=n&d=GYxU95s--mAwuzyZg_n13CPlavANJakKHOxaq3Vt0kI&co=ffffff&ct=000000&cmn=ff0000&cmo=ffa500'></script>
 
