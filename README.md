@@ -1,1 +1,3 @@
-Personal Website. The source code is based on Jon Barron's academic website: https://jonbarron.info/.
+# Personal Website
+
+Visit my personal website here: https://juyangbai.github.io/
