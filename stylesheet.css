@@ -456,7 +456,6 @@ tr.pub td {
 }
 
 tr.pub td.pubinfo {
-  vertical-align: top;
   padding-top: 18px !important;
 }
 
@@ -515,4 +514,29 @@ table:has(+ table > tbody > tr.pub) td {
 
 table:has(+ table > tbody > tr.pub) h2 {
   margin-bottom: 0;
+}
+
+/* ---- Step 15: gaps between research cards (keeps equal heights) ---- */
+table:has(> tbody > tr.pub) {
+  border-spacing: 0 12px !important;
+}
+
+tr.pub td {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+tr.pub td.pubinfo {
+  padding-top: 14px !important;
+}
+
+@media (max-width: 600px) {
+  table:has(> tbody > tr.pub) {
+    border-spacing: 0 !important;
+  }
+
+  tr.pub td {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
 }
