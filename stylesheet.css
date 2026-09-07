@@ -540,3 +540,12 @@ tr.pub td.pubinfo {
     padding-bottom: 6px !important;
   }
 }
+
+/* ---- Hidden visitor-stats container ---- */
+.visitor-stats,
+.visitor-stats * {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
