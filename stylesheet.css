@@ -507,12 +507,12 @@ table:has(> tbody > tr > td > p.name) td {
   }
 }
 
-table:has(> tbody > tr.pub) {
-  margin-top: -32px;
+/* Research heading sits directly above the publication table: drop its
+   bottom spacing and let the first row's own padding form the gap. */
+table:has(+ table > tbody > tr.pub) td {
+  padding-bottom: 0 !important;
 }
 
-@media (max-width: 600px) {
-  table:has(> tbody > tr.pub) {
-    margin-top: -12px;
-  }
+table:has(+ table > tbody > tr.pub) h2 {
+  margin-bottom: 0;
 }
