@@ -261,7 +261,7 @@ tr.pub td:last-child {
   /* Profile: bio and photo stack, photo first */
   table:has(> tbody > tr > td > p.name) > tbody > tr {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   table:has(> tbody > tr > td > p.name) td {
