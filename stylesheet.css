@@ -549,3 +549,18 @@ tr.pub td.pubinfo {
   height: 0 !important;
   overflow: hidden !important;
 }
+
+/* Photo cell centered against the two-paragraph bio */
+table:has(> tbody > tr > td > p.name) > tbody > tr > td:last-child {
+  vertical-align: middle !important;
+}
+
+/* Icons under the photo */
+.social {
+  text-align: center;
+  margin-top: 14px;
+}
+
+table:has(> tbody > tr > td > p.name) > tbody > tr > td:first-child {
+  vertical-align: middle !important;
+}
