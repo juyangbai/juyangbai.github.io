@@ -648,3 +648,10 @@ table:has(> tbody > tr > td > p.name) > tbody > tr > td:first-child {
     object-fit: contain;
   }
 }
+
+/* Align the name with the top of the portrait on desktop. */
+@media (min-width: 601px) {
+  table.profile-layout > tbody > tr > td:last-child:has(> .name) {
+    vertical-align: top !important;
+  }
+}
